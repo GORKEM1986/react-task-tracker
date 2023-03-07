@@ -65,8 +65,7 @@ function App() {
           hideShowAddTaskBar={hideShowAddTaskBar}
         />
         {showAddTaskBar ? <AddTask addNewTask={handleAddTask} /> : null}
-        {alert.show && <Alert {...alert}  removeAlert={showAlert}
-        tasks={tasks} /> }
+        {alert.show && <Alert {...alert}  tasks={tasks}  removeAlert={showAlert}/> }
         <Tasks tasks={tasks} showAlert={showAlert} handleDelete={handleDelete} />
       </div>
    
